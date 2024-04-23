@@ -6,6 +6,7 @@ pipeline {
     stage('Test-webhook') {
       steps {
         sh 'node --version'
+        sh 'hostname -I'
       }
     }
   }
